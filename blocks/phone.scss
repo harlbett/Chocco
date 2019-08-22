@@ -1,0 +1,14 @@
+.phone {
+    display: flex;
+    align-items: center;
+}
+
+.phone__pic {
+    margin-right: 6px; // maybe :before
+}
+
+.phone__number {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+}

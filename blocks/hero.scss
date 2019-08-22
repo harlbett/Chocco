@@ -1,0 +1,21 @@
+.hero {
+    background: $blue url(./img/bg/hero_bg.png) right / contain no-repeat;
+    color: $white;
+}
+.hero__container {
+    height: 100%;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.hero__desc {
+    width: 350px;
+    height: 45px;
+    font-size: 21px;
+    margin-bottom: 32px;
+}

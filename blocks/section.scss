@@ -1,0 +1,11 @@
+.section {
+    min-height: 650px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--non-centered {
+        justify-content: flex-start;
+    }
+}

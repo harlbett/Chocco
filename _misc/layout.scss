@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style: none;
+    }
+}
+
+button {
+    color: inherit;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+}

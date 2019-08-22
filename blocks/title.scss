@@ -1,0 +1,31 @@
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &--hero {
+        width: 404px;
+        height: 160px;
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 22px;
+    }
+    
+    &--color {
+        &--white {
+            color: $white;
+        }
+
+        &--black {
+            color: $black;
+        }
+
+        &--green {
+            color: $green;
+        }
+    }
+
+    &--centered {
+        text-align: center;
+    }
+}

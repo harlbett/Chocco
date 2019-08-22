@@ -1,0 +1,14 @@
+.order-button {
+    padding: 23px 35px;
+    border-radius: 29px;
+    background-color: $green;
+    color: $white;
+    font-size: 19px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    &--hero {
+        background-color: $white;
+        color: $green;
+    }
+}
