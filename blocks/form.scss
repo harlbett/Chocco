@@ -118,7 +118,7 @@
 .form__checkbox-elem:checked {
     &+.form__fake-elem {
         &:after {
-            background: url("./img/icons/check.png") 50% no-repeat transparent;
+            background: url("../../img/icons/check.png") 50% no-repeat transparent;
             background-size: contain;
             width: 11px;
             height: 9px;
