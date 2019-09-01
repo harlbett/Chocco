@@ -420,7 +420,7 @@ footer {
 }
 
 .hero {
-  background: #61c4d9 url("../img/bg/hero_bg.png") right/contain no-repeat;
+  background: #61c4d9 url("./img/bg/hero_bg.png") right/contain no-repeat;
   color: #ffffff;
 }
 
