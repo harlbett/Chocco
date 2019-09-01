@@ -9,7 +9,7 @@
     position: relative;
 
     &:after {
-        content: url(../../img/decor/decor_dots.png); // incorrect location
+        content: url(../img/decor/decor_dots.png); // incorrect location
         position: absolute;
         top: 21%; // 18.5%; // 55px;
         right: -25%; // -26.4%; // -65px;
