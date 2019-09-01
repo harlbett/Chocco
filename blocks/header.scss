@@ -4,3 +4,19 @@
     align-items: center;
     padding-top: 24px;
 }
+
+.header__phone {
+    color: $white;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:before {
+        content: url(/img/icons/phone_white.svg);
+//      content: url('/sprite.svg#phone');
+        width: 11px;
+        height: 11px;
+        margin-right: 6px;
+    }
+}

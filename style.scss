@@ -1,11 +1,15 @@
 //colors
 $blue: #61c4d9;
 $white: #ffffff;
+$azure: #b0f7ff;
 $green: #0f5a47;
 $black: #0d0d0d;
+$black-light: #281e1e;
 $grey: #666666;
 $grey-light: #f8faf9;
-$black-light: #323232;
+$grey-dark: #323232;
+$grey-deep: #2f3234;
+$yellow: #dde3bd;
 
 //normalize
 @import "_misc/normalize.scss";
@@ -18,7 +22,6 @@ $black-light: #323232;
 @import "blocks/hero.scss";
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
-@import "blocks/phone.scss";
 @import "blocks/title.scss";
 @import "blocks/order-button.scss";
 @import "blocks/features.scss";
@@ -28,3 +31,9 @@ $black-light: #323232;
 @import "blocks/fixed-menu.scss";
 @import "blocks/order.scss";
 @import "blocks/form.scss";
+@import "blocks/team-accordeon.scss";
+@import "blocks/menu.scss";
+@import "blocks/menu-accordeon.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+@import "blocks/socials.scss";

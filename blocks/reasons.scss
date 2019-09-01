@@ -6,10 +6,13 @@
     flex: 1;
     text-align: center;
     margin-right: 80px;
+    position: relative;
 
     &:after {
         content: url(./img/decor/decor_dots.png); // incorrect location
-        display: block;
+        position: absolute;
+        top: 21%; // 18.5%; // 55px;
+        right: -25%; // -26.4%; // -65px;
     }
 
     &:last-child {
@@ -22,13 +25,35 @@
 }   
 
 .reasons__picture {
-    margin-bottom: 35px;
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    background-color: #f2f5f4;
+//    display: inline-flex;
+//    justify-content: center;
+//    align-items: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 28px; // 35px;
+    position: relative;
+}
+
+.reasons__picture-icon {
+    width: 75px;
+    height: 69px;
+    fill: none;
+    stroke: #2a2a29;;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+    position: absolute;
+    top: 23%;
+    left: 23%;
 }
 
 .reasons__title {
     font-size: 27px;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 19px; // 30px;
 }
 
 .reasons__desc {

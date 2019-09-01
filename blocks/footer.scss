@@ -1,0 +1,43 @@
+.footer {
+    height: 14%; // 93px;
+    position: absolute;
+	bottom: 0;
+	left: 0;
+    right: 0;
+}
+
+.footer__container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer__column {
+    width: 50%;
+    font-size: 21px;
+
+    &--right {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.footer__address {
+    line-height: 24px;
+}
+
+.footer__phone {
+    color: $green;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:before {
+        content: url(/img/icons/phone_green.svg);
+//      content: url('/sprite.svg#phone');
+        width: 11px;
+        height: 11px;
+        margin-right: 6px;
+    }
+}

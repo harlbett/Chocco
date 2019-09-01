@@ -1,0 +1,65 @@
+.menu-accordeon {
+    display: flex; // ?
+    position: absolute;
+    right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.menu-accordeon__item {
+    display: flex;
+    height: 100vh;
+
+    &--visible {
+        .menu-accordeon__content {
+            width: 630px;
+            overflow: inherit; // ?
+            background-color: $grey-deep;
+            opacity: 0.93;
+        }
+    }
+}
+
+.menu-accordeon__trigger {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-accordeon__trigger-title {
+    width: 100px;
+    height: 100vh;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 48px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    background: $grey-deep center center / cover no-repeat;
+
+    &--milk {
+        background-image: url(/img/bg/coconut_milk_bars_bg_inverted.png);
+    }
+
+    &--honey {
+        background-image: url(/img/bg/honey_and_fruit_bars_bg_inverted.png);
+    }
+
+    &--berries {
+        background-image: url(/img/bg/wild_berry_bars_bg_inverted.png);
+    }
+}
+
+.menu-accordeon__content {
+    width: 0;
+    overflow: hidden;
+}
+
+.menu-accordeon__text {
+    width: 380px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: auto;
+    margin-top: 50px;
+}
