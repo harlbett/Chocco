@@ -1,18 +1,42 @@
 .why-chocco {
-    background: url(./img/bg/why_chocco_bg.png) left / auto no-repeat;
+    background: url(./img/bg/why_chocco_bg.png) center center / cover no-repeat;
+
+    @include tablets {
+        background: url(./img/bg/why_chocco_bg_tablets.png) left bottom/cover no-repeat;
+    }
+
+    @include phones {
+        background: none;
+    }
 }
 
 .why-chocco__desc {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 57px;
+    margin-bottom: rem(57px);
+
+    @include tablets {
+        margin-bottom: 4.25%;
+    }
+
+    @include phones {
+        margin-bottom: 11.625%;
+    }
 }
 
 .why-chocco__desc-text {
-    width: 410px;
+    width: 49.5%; // rem(410px);
     color: $grey;
-    font-size: 18px;
+    font-size: rem(18px);
     text-align: center;
-    margin-top: 10px; // 23px;
+    margin-top: rem(10px); // rem(23px);
+
+    @include tablets {
+        width: 63.5%;
+    }
+
+    @include phones {
+        width: 100%;
+    }
 }

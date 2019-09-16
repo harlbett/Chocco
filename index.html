@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Chocco</title>
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700,800,900i&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
@@ -13,35 +14,42 @@
         <section class="section section--non-centered hero">
             <div class="container hero__container">
                 <header class="header">
-                    <div class="logo">
+                    <div class="header__logo">
                         <img src="./img/logo/logo.png" alt="chocco logo picture" class="logo__pic">
                     </div>
-                    <nav class="nav">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a href="" class="nav__link">О нас</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="" class="nav__link">Батончики</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="" class="nav__link">Команда</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="" class="nav__link">Меню</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="" class="nav__link">Отзывы</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="" class="nav__link">Как мы работаем</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="" class="nav__link">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div class="header__menu">
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a href="" class="nav__link" data-scroll-to="1">О нас</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="" class="nav__link" data-scroll-to="2">Батончики</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="" class="nav__link" data-scroll-to="3">Команда</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="" class="nav__link" data-scroll-to="4">Меню</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="" class="nav__link" data-scroll-to="5">Отзывы</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="" class="nav__link" data-scroll-to="6">Как мы работаем</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="" class="nav__link" data-scroll-to="7">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                     <a href="tel:88009039090" class="header__phone">8 800 903 90 90</a>
+<!---->
+                    <a href="#" class="hamburger-menu-link">
+                        <div class="hamburger-menu-link__bars"></div>
+                    </a>
+<!---->
                 </header>
                 <div class="hero__content">
                     <h1 class="title title--hero title--color--white">Натуральные шоколадные батончики</h1>
@@ -57,21 +65,21 @@
                     <ul class="features__list">
                         <li class="features__item">
                         <!--<img src="./img/icons/1_twig_with_leaves.png" alt="Twig with two leaves picture" class="features__pic">-->
-                            <svg class="features__pic">
+                            <svg class="features__pic features__pic--twig">
                                 <use xlink:href="./sprite.svg#twig-with-leaves"></use>
                             </svg>
                             <div class="features__text">100% натуральный продукт</div>
                         </li>
                         <li class="features__item">
                         <!--<img src="./img/icons/2_truck_with_watch.png" alt="Truck with small watch picture" class="features__pic">-->
-                            <svg class="features__pic">
+                            <svg class="features__pic features__pic--truck">
                                 <use xlink:href="./sprite.svg#truck-with-watch"></use>
                             </svg>
                             <div class="features__text">3-5 дней доставка по РФ</div>
                         </li>
                         <li class="features__item">
                         <!--<img src="./img/icons/3_cloth_tape_measure.png" alt="Сloth tape measure picture" class="features__pic">-->
-                            <svg class="features__pic">
+                            <svg class="features__pic features__pic--tape-measure">
                                 <use xlink:href="./sprite.svg#cloth-tape-measure"></use>
                             </svg>
                             <div class="features__text">Не портит фигуру</div>
@@ -96,10 +104,10 @@
                     <ul class="reasons__list">
                         <li class="reasons__item">
                             <div class="reasons__picture">
-                            <!--<img src="./img/icons/4_happy_man.png" alt="happy man picture" class="reasons__picture-icon">-->
-                            <svg class="reasons__picture-icon">
-                                <use xlink:href="./sprite.svg#happy-man"></use>
-                            </svg>
+                                <!--<img src="./img/icons/4_happy_man.png" alt="happy man picture" class="reasons__picture-icon">-->
+                                <svg class="reasons__picture-icon">
+                                    <use xlink:href="./sprite.svg#happy-man"></use>
+                                </svg>
                             </div>
                             <div class="reasons__why">
                                 <div class="reasons__title">Полезно</div>
@@ -114,10 +122,10 @@
                         </li>
                         <li class="reasons__item">
                             <div class="reasons__picture">
-                            <!--<img src="./img/icons/5_smiley_in_love.png" alt="smiley face in love picture" class="reasons__picture-icon">-->
-                            <svg class="reasons__picture-icon">
-                                <use xlink:href="./sprite.svg#smiley-in-love"></use>
-                            </svg>
+                                <!--<img src="./img/icons/5_smiley_in_love.png" alt="smiley face in love picture" class="reasons__picture-icon">-->
+                                <svg class="reasons__picture-icon">
+                                    <use xlink:href="./sprite.svg#smiley-in-love"></use>
+                                </svg>
                             </div>
                             <div class="reasons__why">
                                 <div class="reasons__title">Вкусно</div>
@@ -132,10 +140,10 @@
                         </li>
                         <li class="reasons__item">
                             <div class="reasons__picture">
-                            <!--<img src="./img/icons/6_muscular_arm.png" alt="muscular arm picture" class="reasons__picture-icon">-->
-                            <svg class="reasons__picture-icon">
-                                <use xlink:href="./sprite.svg#muscular-arm"></use>
-                            </svg>
+                                <!--<img src="./img/icons/6_muscular_arm.png" alt="muscular arm picture" class="reasons__picture-icon">-->
+                                <svg class="reasons__picture-icon">
+                                    <use xlink:href="./sprite.svg#muscular-arm"></use>
+                                </svg>
                             </div>
                             <div class="reasons__why">
                                 <div class="reasons__title">Питательно</div>
@@ -157,7 +165,7 @@
             <container class="container">
                 <h1 class="title title--color--black title--centered">Команда</h1>
                 <ul class="team-accordeon">
-                    <li class="team-accordeon__item">
+                    <li class="team-accordeon__item team-accordeon__item--visible">
                         <img src="./img/content/team_member_1.png" alt="Chocco team chief technologist" class="team-accordeon__pic">
                         <a href="#" class="team-accordeon__trigger">Борис Федорович</a>
                         <div class="team-accordeon__content">
@@ -167,7 +175,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="team-accordeon__item">
+                    <li class="team-accordeon__item team-accordeon__item--visible">
                         <img src="./img/content/team_member_2.png" alt="Chocco team packaging specialist" class="team-accordeon__pic">
                         <a href="#" class="team-accordeon__trigger">Алла Иванова</a>
                         <div class="team-accordeon__content">
@@ -177,7 +185,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="team-accordeon__item">
+                    <li class="team-accordeon__item team-accordeon__item--visible">
                         <img src="./img/content/team_member_3.png" alt="Chocco team operator" class="team-accordeon__pic">
                         <a href="#" class="team-accordeon__trigger">Кирилл Матросов</a>
                         <div class="team-accordeon__content">
@@ -206,8 +214,8 @@
                 <h1 class="title title--color--white menu__title">Меню</h1>
                 <ul class="menu-accordeon">
                     <li class="menu-accordeon__item menu-accordeon__item--visible">
-                        <a href="#" class="menu-accordeon__trigger">
-                            <div class="menu-accordeon__trigger-title menu-accordeon__trigger-title--milk">Батончики с молоком</div>
+                        <a href="#" class="menu-accordeon__trigger menu-accordeon__trigger--milk">
+                            <div class="menu-accordeon__trigger-title">Батончики с молоком</div>
                         </a>
                         <div class="menu-accordeon__content">
                             <div class="menu-accordeon__text">
@@ -221,11 +229,16 @@
                                     Надо бы, кстати, бабулю поздравить с днём Победы.
                                 </p>
                             </div>
+                            <a href="" class="menu-accordeon__close">
+                                <svg class="menu-accordeon__close-icon">
+                                    <use xlink:href="./sprite.svg#close"></use>
+                                </svg>
+                            </a>
                         </div>
                     </li>
                     <li class="menu-accordeon__item">
-                        <a href="#" class="menu-accordeon__trigger">
-                            <div class="menu-accordeon__trigger-title menu-accordeon__trigger-title--honey">С мёдом и фруктами</div>
+                        <a href="#" class="menu-accordeon__trigger menu-accordeon__trigger--honey">
+                            <div class="menu-accordeon__trigger-title">С мёдом и фруктами</div>
                         </a>
                         <div class="menu-accordeon__content">
                             <div class="menu-accordeon__text">
@@ -240,11 +253,16 @@
                                     deserunt mollit anim id est laborum.
                                 </p>
                             </div>
+                            <a href="" class="menu-accordeon__close">
+                                <svg class="menu-accordeon__close-icon">
+                                    <use xlink:href="./sprite.svg#close"></use>
+                                </svg>
+                            </a>
                         </div>
                     </li>
                     <li class="menu-accordeon__item">
-                        <a href="#" class="menu-accordeon__trigger">
-                            <div class="menu-accordeon__trigger-title menu-accordeon__trigger-title--berries">Дикие ягоды</div>
+                        <a href="#" class="menu-accordeon__trigger menu-accordeon__trigger--berries">
+                            <div class="menu-accordeon__trigger-title">Дикие ягоды</div>
                         </a>
                         <div class="menu-accordeon__content">
                             <div class="menu-accordeon__text">
@@ -259,6 +277,11 @@
                                     deserunt mollit anim id est laborum.
                                 </p>
                             </div>
+                            <a href="" class="menu-accordeon__close">
+                                <svg class="menu-accordeon__close-icon">
+                                    <use xlink:href="./sprite.svg#close"></use>
+                                </svg>
+                            </a>
                         </div>
                     </li>
                 </ul>
@@ -270,7 +293,7 @@
                 <h1 class="title title--color--black title--centered">Отзывы</h1>
                 <div class="reviews__board">
                     <ul class="reviews__list">
-                        <li class="reviews__item reviews__item--visible">
+                        <li class="reviews__item">
                             <div class="reviews__photo">
                                 <img src="./img/content/1_Alyona.png" alt="Alyona's photo" class="reviews__pic">
                             </div>
@@ -288,7 +311,7 @@
                                 <div class="reviews__author">Алёна Хмельницкая</div>
                             </div>
                         </li>
-<!--                        <li class="reviews__item reviews__item--visible">
+                        <li class="reviews__item reviews__item--visible">
                             <div class="reviews__photo">
                                 <img src="./img/content/2_Maria.png" alt="Maria's photo" class="reviews__pic">
                             </div>
@@ -306,7 +329,7 @@
                                 <div class="reviews__author">Мария Орлова</div>
                             </div>
                         </li>
-                        <li class="reviews__item reviews__item--visible">
+                        <li class="reviews__item">
                             <div class="reviews__photo">
                                 <img src="./img/content/3_Vadim.png" alt="Vadim's photo" class="reviews__pic">
                             </div>
@@ -323,7 +346,7 @@
                                 </div>
                                 <div class="reviews__author">Вадим Грачев</div>
                             </div>
-                        </li>-->
+                        </li>
                     </ul>
                     <div class="reviews__switch">
                         <ul class="reviews__switch-list">
@@ -390,7 +413,7 @@
                             </div>
                         </div>
                         <div class="form__column">
-                            <label class="form__block">
+                            <label class="form__block form__block--textarea">
                                 <div class="form__block-title">Комментарий</div>
                                 <textarea class="form__input form__input--textarea"></textarea>
                             </label>
@@ -406,11 +429,13 @@
                                     <div class="form__radio-title">Оплата по карте</div>
                                 </label>
                             </div>
-                            <label class="form__checkbox">
-                                <input type="checkbox" name="callback" value="" class="form__checkbox-elem">
-                                <div class="form__fake-elem form__fake-elem--checkbox"></div>
-                                <div class="form__checkbox-title">Не перезванивать</div>
-                            </label>
+                            <div class="form__row">
+                                <label class="form__checkbox">
+                                    <input type="checkbox" name="callback" value="" class="form__checkbox-elem">
+                                    <div class="form__fake-elem form__fake-elem--checkbox"></div>
+                                    <div class="form__checkbox-title">Не перезванивать</div>
+                                </label>
+                            </div>
                             <div class="form__row">
                                 <button type="submit" class="form__button order-button">Заказать</button>
                                 <button type="reset" class="form__button form__button--reset">Очистить</button>
@@ -464,7 +489,40 @@
                 </container>
             </footer>
         </section>
-        
+<!---->        
+        <div class="hamburger-menu hamburger-menu--visible">
+            <nav class="nav nav--hamburger">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="" class="nav__link" data-scroll-to="1">О нас</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link" data-scroll-to="2">Батончики</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link" data-scroll-to="3">Команда</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link" data-scroll-to="4">Меню</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link" data-scroll-to="5">Отзывы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link" data-scroll-to="6">Как мы работаем</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link" data-scroll-to="7">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="" class="hamburger-menu__close">
+                <svg class="hamburger-menu__close-icon">
+                    <use xlink:href="./sprite.svg#close"></use>
+                </svg>
+            </a>
+        </div>
+<!---->
         <ul class="fixed-menu">
             <li class="fixed-menu__item fixed-menu__item--active">
                 <button type="button" class="fixed-menu__dot"></button>

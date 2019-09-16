@@ -2,21 +2,41 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 24px;
+    padding-top: rem(24px);
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+.header__logo {
+    @include tablets {
+        margin-left: rem(10px);
+    }
+}
+
+.header__menu {
+    flex: 1;
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .header__phone {
     color: $white;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: rem(24px);
+    line-height: rem(30px);
     text-transform: uppercase;
     text-decoration: none;
 
     &:before {
         content: url(./img/icons/phone_white.svg);
 //      content: url(./sprite.svg#phone);
-        width: 11px;
-        height: 11px;
-        margin-right: 6px;
+        width: rem(11px);
+        height: rem(11px);
+        margin-right: rem(6px);
+    }
+
+    @include tablets {
+        display: none;
     }
 }

@@ -1,14 +1,30 @@
 .title {
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: 700;
     text-transform: uppercase;
 
+    @include phones {
+        font-size: rem(40px);
+    }
+
     &--hero {
-        width: 404px;
-        height: 160px;
-        font-size: 60px;
-        line-height: 60px;
-        margin-bottom: 22px;
+        width: rem(404px);
+        height: rem(160px);
+        font-size: rem(60px);
+        line-height: rem(60px);
+        margin-bottom: rem(22px);
+
+        @include tablets {
+            text-align: center;
+        }
+
+        @include phones {
+            width: auto;
+            height: auto;
+            font-size: rem(46px);
+            line-height: rem(40px);
+            margin-bottom: rem(17px);
+        }
     }
     
     &--color {

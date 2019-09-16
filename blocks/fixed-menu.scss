@@ -1,7 +1,11 @@
 .fixed-menu {
     position: fixed;
-    top: 215px;
-    right: 50px;
+    top: rem(215px);
+    right: rem(50px);
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .fixed-menu__item {
@@ -13,17 +17,17 @@
 }
 
 .fixed-menu__dot {
-    width: 16px;
-    height: 16px;
+    width: rem(16px);
+    height: rem(16px);
     border-radius: 50%;
-    border: 1px solid transparent;
-    margin-bottom: 15px;
+    border: rem(1px) solid transparent;
+    margin-bottom: rem(15px);
     position: relative;
     
     &:before {
         content: "";
-        width: 6px;
-        height: 6px;
+        width: rem(6px);
+        height: rem(6px);
         border-radius: 50%;
         background: $white;
         top: 50%;

@@ -1,9 +1,9 @@
 .order-button {
-    padding: 18px 34px; // 23px 35px
-    border-radius: 29px;
+    padding: rem(18px) rem(34px); // rem(23px) rem(35px)
+    border-radius: rem(29px);
     background-color: $green;
     color: $white;
-    font-size: 19px;
+    font-size: rem(19px);
     font-weight: 800;
     text-transform: uppercase;
 

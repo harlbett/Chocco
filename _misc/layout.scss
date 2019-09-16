@@ -1,5 +1,23 @@
+html {
+    font-size: 16px;
+/*
+    @include tablets {
+        font-size: 15px;
+    }
+*/
+/*
+    @include phones {
+        font-size: 14px;
+    }
+*/
+}
+
 html, body {
     height: 100%;
+}
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 * {
@@ -7,11 +25,14 @@ html, body {
 }
 
 .wrapper {
-    font-family: 'Alegreya Sans', sans-serif;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
 }
 
 .container {
-    width: 940px;
+    width: 95%;
+    max-width: rem(940px);
     margin: 0 auto;
     display: flex;
     flex-direction: column;

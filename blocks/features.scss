@@ -1,36 +1,82 @@
 .features__list {
     display: flex;
     align-items: center;
-    margin-bottom: 62px;
+    margin-bottom: rem(62px);
+
+    @include tablets {
+        justify-content: center;
+        margin-bottom: rem(55px);
+    }
+
+    @include phones {
+        margin-bottom: rem(45px);
+    }
 }
 
 .features__item {
     display: flex;
     align-items: flex-start;
-    width: 125px;
-    height: 56px;
-    margin-right: 48px;
-    
+//    width: rem(136px);
+    height: rem(56px);
+    margin-right: rem(48px);
+
     &:first-child {
-        width: 145px;
+        width: rem(148px);
+
+        @include tablets {
+            width: 25%;
+        }
+    }
+
+    &:nth-child(2) {
+        width: rem(129px);
+
+        @include tablets {
+            width: 25.1%;
+        }
     }
 
     &:last-child {
+        width: rem(135px);
         margin-right: 0;
+
+        @include tablets {
+            width: 19%;
+        }
     }
 }
 
 .features__pic {
-    width: 50px;
-    height: 42px;
     fill: none;
     stroke: $azure;
     stroke-width: 0.5;
     stroke-miterlimit: 10;
-    margin-right: 10px;
+    margin-right: rem(10px);
+
+    &--twig {
+        width: rem(80px);
+        height: rem(41px);
+
+        @include tablets {
+            width: rem(63px);
+        }
+    }
+
+    &--truck {
+        width: rem(114px);
+        height: rem(40px);
+
+        @include tablets {
+            width: rem(63px);
+        }
+    }
+
+    &--tape-measure {
+        width: rem(57px);
+        height: rem(42px);
+    }
 }
 
 .features__text {
-    font-size: 16px;
-//    padding-left: 10px;
+    font-size: rem(16px);
 }

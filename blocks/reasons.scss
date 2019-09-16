@@ -1,20 +1,51 @@
 .reasons__list {
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .reasons__item {
     flex: 1;
     text-align: center;
-    margin-right: 80px;
+    margin-right: 8%; // 8.51%; // rem(80px);
     position: relative;
 
     &:after {
         content: url(./img/decor/decor_dots.png); // incorrect location
         position: absolute;
-        top: 21%; // 18.5%; // 55px;
-        right: -25%; // -26.4%; // -65px;
+        top: 20%; // 21%; // 18.5%; // rem(55px);
+        right: -27%; // -25%; // -26.4%; // rem(-65px);
+
+        @include tablets {
+            display: none;
+        }
     }
 
+    &:first-child {
+        .reasons__picture {
+            .reasons__picture-icon {
+                top: 21%;
+                left: 24%;
+            }
+        }
+    }
+/*
+    &:nth-child(2) {
+        .reasons__why {
+            width: 105.5%;
+
+            @include tablets {
+                width: 65.95%;
+            }
+
+            @include phones {
+                flex: 1;
+            }
+        }
+    }
+*/
     &:last-child {
         margin-right: 0;
 
@@ -22,11 +53,26 @@
             display: none;
         }
     }
+
+    @include tablets {
+        margin-right: 0;
+        margin-bottom: rem(27px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @include phones {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8.775%;  
+    }
 }   
 
 .reasons__picture {
-    width: 126px;
-    height: 126px;
+    width: rem(126px);
+    height: rem(126px);
     border-radius: 50%;
     background-color: #f2f5f4;
 //    display: inline-flex;
@@ -34,31 +80,60 @@
 //    align-items: center;
     display: block;
     margin: 0 auto;
-    margin-bottom: 28px; // 35px;
+    margin-bottom: rem(28px); // rem(35px);
     position: relative;
+//
+    @include tablets {
+        margin-bottom: rem(20px); // rem(25px);
+    }
+
+    @include phones {
+        margin-right: rem(15px);
+        margin-bottom: 0;
+    }
 }
 
 .reasons__picture-icon {
-    width: 75px;
-    height: 69px;
+    width: rem(80px); // 75px;
+    height: rem(74px); // 69px;
     fill: none;
     stroke: #2a2a29;;
     stroke-width: 0.75;
     stroke-miterlimit: 10;
     position: absolute;
-    top: 23%;
+    top: 22%;
     left: 23%;
 }
 
+.reasons__why {
+    @include tablets {
+        width: 65.95%;
+        display: inline-block;
+    }
+
+    @include phones {
+        flex: 1;
+        text-align: left;
+    }
+}
+
 .reasons__title {
-    font-size: 27px;
+    font-size: rem(27px);
     font-weight: 700;
-    margin-bottom: 19px; // 30px;
+    margin-bottom: rem(19px); // rem(30px);
+
+    @include tablets {
+        margin-bottom: rem(10px); // rem(15px);
+    }
+
+    @include phones {
+        margin-bottom: 7.94%;
+    }
 }
 
 .reasons__desc {
-    width: 280px;
+//    max-width: rem(280px);
     color: $grey;
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 300;
 }

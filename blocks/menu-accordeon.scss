@@ -3,51 +3,101 @@
     position: absolute;
     right: 0;
 	top: 0;
-	bottom: 0;
+    bottom: 0;
 }
 
 .menu-accordeon__item {
     display: flex;
-    height: 100vh;
+    justify-content: flex-end;
+    height: 100%; // 100vh;
 
     &--visible {
         .menu-accordeon__content {
-            width: 630px;
+            width: 60%;  // in avocode: content = 630px, text = 380px
             overflow: inherit; // ?
             background-color: $grey-deep;
             opacity: 0.93;
+            position: relative;
+
+            .menu-accordeon__close {
+                width: rem(18px);
+                height: rem(18px);
+                box-sizing: content-box;
+                padding: rem(5px);
+                position: absolute;
+                top: rem(25px);
+                right: rem(30px);
+            
+                &:hover {
+                    .menu-accordeon__close-icon {
+                        use {
+                            opacity: 1;
+                        }
+                    }
+                }
+            
+                @include tablets {
+                    right: rem(20px);
+                }
+
+                @include phones {
+                    right: rem(10px);
+                }
+            }
+
+            @include tablets {
+                width: 100%;
+            }
         }
     }
 }
 
 .menu-accordeon__trigger {
-    display: block;
+    width: rem(100px);
+    display: flex; // ?
+//    justify-content: center;
     text-decoration: none;
     color: inherit;
-}
-
-.menu-accordeon__trigger-title {
-    width: 100px;
-    height: 100vh;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    font-size: 48px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    padding-top: 40px;
     background: $grey-deep center center / cover no-repeat;
 
     &--milk {
-        background-image: url(./img/bg/coconut_milk_bars_bg_inverted.png);
+        background-image: url(./img/bg/coconut_milk_bars_bg.png);
     }
 
     &--honey {
-        background-image: url(./img/bg/honey_and_fruit_bars_bg_inverted.png);
+        background-image: url(./img/bg/honey_and_fruit_bars_bg.png);
     }
 
     &--berries {
-        background-image: url(./img/bg/wild_berry_bars_bg_inverted.png);
+        background-image: url(./img/bg/wild_berry_bars_bg.png);
+    }
+
+    @include tablets {
+        width: rem(80px);
+    }
+
+    @include phones {
+        width: rem(50px);
+    }   
+}
+
+.menu-accordeon__trigger-title {
+    width: rem(100px);
+    display: flex;
+    align-items: center;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: rem(48px);
+    font-weight: 500;
+    padding-top: rem(40px);
+
+    @include tablets {
+        width: rem(80px);
+    }
+
+    @include phones {
+        width: rem(50px);
+        font-size: rem(36px);
     }
 }
 
@@ -57,9 +107,26 @@
 }
 
 .menu-accordeon__text {
-    width: 380px;
-    font-size: 16px;
-    line-height: 24px;
-    margin: auto;
-    margin-top: 50px;
+    font-size: rem(16px);
+    line-height: rem(24px);
+    padding: rem(50px) rem(77px);
+
+    @include tablets {
+            padding: rem(60px) rem(48px);
+    }
+
+    @include phones {
+        padding: rem(60px) rem(25px);
+    }
+}
+
+.menu-accordeon__close-icon {
+	width: 100%;
+	height: 100%;
+
+	use {
+		fill: #fff;
+        opacity: .7;
+		transition: fill .3s; // ?
+	}
 }
