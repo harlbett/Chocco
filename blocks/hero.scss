@@ -3,8 +3,8 @@
 //    background: $blue url(./img/bg/hero_bg.png) right / contain no-repeat;
     background-color: $blue;
     background-image: url(./img/bg/hero_berries_bg.png), url(./img/bg/hero_bars_bg.png), url(./img/bg/hero_pattern_bg.png);
-    background-position: bottom, right 4% top 34%, right;
-    background-size: contain, auto 73%, contain;
+    background-position: bottom right, top 34% right 4%, right;
+    background-size: auto, auto 73%, contain;
     background-repeat: no-repeat;
 
     @include tablets {
