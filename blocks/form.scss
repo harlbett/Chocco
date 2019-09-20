@@ -60,6 +60,12 @@
     line-height: rem(30px);
 }
 
+.form__radio-title {
+    @include tablets {
+        line-height: rem(21px);
+    }
+}
+
 .form__input {
     width: 100%;
     height: rem(60px);
@@ -169,10 +175,18 @@
 .form__checkbox-elem:checked {
     &+.form__fake-elem {
         &:after {
-            background: url(./img/icons/check.png) 50% no-repeat transparent;
-            background-size: contain;
-            width: rem(11px);
-            height: rem(9px);
+            content: "";
+            display: block;
+            width: rem(7px);
+            height: rem(3.3px);
+            background: transparent;
+            border-left: $green 3px solid;
+            border-bottom: $green 3px solid;
+            transform: rotate(-45deg);
+            transition: width .2s, height .2s;
+            position: absolute;
+            top: 36%;
+            left: 33%;
         }
     }
 }

@@ -1,48 +1,67 @@
-.features__list {
-    display: flex;
-    align-items: center;
+.features {
     margin-bottom: rem(62px);
 
     @include tablets {
+        display: flex;
         justify-content: center;
         margin-bottom: rem(55px);
     }
 
     @include phones {
-        margin-bottom: rem(45px);
+        flex: 0.1;
+        margin-bottom: rem(16px); // rem(45px);
+    }
+}
+
+.features__list {
+    display: flex;
+    align-items: center;
+
+    @include tablets {
+        width: 100%;
+        justify-content: center;
+    }
+
+    @include phones {
+        justify-content: space-evenly;
     }
 }
 
 .features__item {
     display: flex;
     align-items: flex-start;
-//    width: rem(136px);
     height: rem(56px);
     margin-right: rem(48px);
 
     &:first-child {
-        width: rem(148px);
-
-        @include tablets {
-            width: 25%;
+        .features__text {
+            width: rem(84px);
         }
     }
 
     &:nth-child(2) {
-        width: rem(129px);
-
-        @include tablets {
-            width: 25.1%;
+        .features__text {
+            width: rem(57px);
         }
     }
 
     &:last-child {
-        width: rem(135px);
         margin-right: 0;
-
-        @include tablets {
-            width: 19%;
+        
+        .features__text {
+            width: rem(66px);
         }
+    }
+
+    @include tablets {
+        margin-right: rem(44px); // 6.855% = 50px
+    }
+
+    @include phones {
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
     }
 }
 
@@ -52,31 +71,34 @@
     stroke-width: 0.5;
     stroke-miterlimit: 10;
     margin-right: rem(10px);
+    height: rem(42px);
 
     &--twig {
-        width: rem(80px);
-        height: rem(41px);
-
-        @include tablets {
-            width: rem(63px);
-        }
+        width: rem(45px);
     }
 
     &--truck {
-        width: rem(114px);
-        height: rem(40px);
-
-        @include tablets {
-            width: rem(63px);
-        }
+        width: rem(54px);
     }
 
     &--tape-measure {
-        width: rem(57px);
-        height: rem(42px);
+        width: rem(44px);
+    }
+
+    @include tablets {
+        margin-right: rem(7px);
+    }
+
+    @include phones {
+        margin-right: 0;
+        margin-bottom: rem(7px);
     }
 }
 
 .features__text {
     font-size: rem(16px);
+
+    @include phones {
+        text-align: center;
+    }
 }

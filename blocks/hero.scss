@@ -1,13 +1,16 @@
 .hero {
     color: $white;
-    background: $blue url(./img/bg/hero_bg.png) right / contain no-repeat;
+//    background: $blue url(./img/bg/hero_bg.png) right / contain no-repeat;
+    background-color: $blue;
+    background-image: url(./img/bg/hero_berries_bg.png), url(./img/bg/hero_bars_bg.png), url(./img/bg/hero_pattern_bg.png);
+    background-position: bottom, right 4% top 34%, right;
+    background-size: contain, auto 73%, contain;
+    background-repeat: no-repeat;
 
     @include tablets {
-        background-color: $blue;
         background-image: url(./img/bg/hero_bars_berries_bg_tablets.png), url(./img/bg/hero_pattern_bg_tablets.png);
         background-position: center top 9%, right top;
         background-size: auto; // in phones: berries = 44.25%
-        background-repeat: no-repeat;
     }
 
     @include phones {
@@ -28,6 +31,11 @@
     @include tablets {
         justify-content: flex-end;
         align-items: center;
+        margin-bottom: rem(40px);
+    }
+
+    @include phones{
+        margin-bottom: 1.8rem;
     }
 }
 
@@ -45,12 +53,6 @@
         width: 70%;
         height: auto;
         font-size: rem(18px);
-        margin-bottom: rem(23px);
-    }
-}
-
-.hero__button {
-    @include tablets {
-        margin-bottom: rem(40px);
+        margin-bottom: rem(27px);
     }
 }
