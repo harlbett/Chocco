@@ -2,9 +2,12 @@
     color: $white;
 //    background: $blue url(./img/bg/hero_bg.png) right / contain no-repeat;
     background-color: $blue;
-    background-image: url(./img/bg/hero_berries_bg.png), url(./img/bg/hero_bars_bg.png), url(./img/bg/hero_pattern_bg.png);
-    background-position: bottom right, top 34% right 4%, right;
-    background-size: auto, auto 73%, contain;
+//    background-image: url(./img/bg/hero_berries_bg.png), url(./img/bg/hero_bars_bg.png), url(./img/bg/hero_pattern_bg.png);
+    background-image: url(./img/bg/hero_berries_bg.png), url(./img/bg/hero_pattern_bg.png);
+//    background-position: bottom right, top 34% right 4%, right;
+    background-position: bottom right, right;
+//    background-size: auto, auto 73%, contain;
+    background-size: auto, contain;
     background-repeat: no-repeat;
 
     @include tablets {
@@ -20,6 +23,7 @@
 }
 .hero__container {
     height: 100%;
+    background: url(./img/bg/hero_bars_bg.png) top 34% right 4% / auto 73% no-repeat;
 }
 
 .hero__content {

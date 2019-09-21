@@ -462,9 +462,9 @@ footer {
 .hero {
   color: #ffffff;
   background-color: #61c4d9;
-  background-image: url(./img/bg/hero_berries_bg.png), url(./img/bg/hero_bars_bg.png), url(./img/bg/hero_pattern_bg.png);
-  background-position: bottom right, top 34% right 4%, right;
-  background-size: auto, auto 73%, contain;
+  background-image: url(./img/bg/hero_berries_bg.png), url(./img/bg/hero_pattern_bg.png);
+  background-position: bottom right, right;
+  background-size: auto, contain;
   background-repeat: no-repeat;
 }
 
@@ -485,6 +485,7 @@ footer {
 
 .hero__container {
   height: 100%;
+  background: url(./img/bg/hero_bars_bg.png) top 34% right 4%/auto 73% no-repeat;
 }
 
 .hero__content {
