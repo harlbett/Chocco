@@ -471,7 +471,7 @@ footer {
 @media screen and (max-width: 768px) {
   .hero {
     background-image: url(./img/bg/hero_bars_berries_bg_tablets.png), url(./img/bg/hero_pattern_bg_tablets.png);
-    background-position: center top 9%, right top;
+    background-position: top 9% center, top right;
     background-size: auto;
   }
 }
@@ -479,7 +479,7 @@ footer {
 @media screen and (max-width: 480px) {
   .hero {
     background-image: url(./img/bg/hero_bars_berries_bg_phones.png), url(./img/bg/hero_pattern_bg_phones.png);
-    background-position: center top 5%, right top;
+    background-position: top 5% center, top right;
   }
 }
 
