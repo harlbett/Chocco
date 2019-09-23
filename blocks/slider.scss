@@ -1,0 +1,204 @@
+.slider {
+    display: flex;
+    align-items: center;
+
+    @include tablets {
+        justify-content: center;
+    }
+}
+
+.slider__arrow {
+    display: block;
+    line-height: 0;
+
+    @include tablets {
+        position: absolute;
+        top: 33%;
+
+        &--left {
+            left: rem(30px);
+        }
+
+        &--right {
+            right: rem(30px);
+        }
+    }
+
+    @include phones {
+        top: 29%;
+
+        &--left {
+            left: rem(10px);
+        }
+
+        &--right {
+            right: rem(10px);
+        }
+    }
+}
+
+.slider__arrow-pic {
+    width: rem(15px);
+    height: rem(29px);
+    fill: transparent;
+    stroke: $black;
+    stroke-width: rem(2px);
+}
+
+.slider__list {
+    margin: 0 rem(5px);
+}
+
+.slider__item, .slide {
+    display: flex;
+    justify-content: space-between;
+
+    &--invisible {
+        display: none;
+    }
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.slide__column {
+//    flex: 1;
+    width: 48.8%;
+
+    &:first-child {
+        position: relative;
+
+        @include tablets {
+            margin-bottom: rem(28px);
+        }
+
+        @include phones {
+            margin-bottom: rem(12px);
+        }
+    }
+
+    @include tablets {
+        width: 82%;
+    }
+}
+
+.slide__pic {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    @include tablets {
+        position: static;
+    }
+}
+
+.slide__title {
+    color: $black;
+    font-size: rem(34px); // rem(36px);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: rem(22px);
+
+    @include tablets {
+        font-size: rem(30px);
+        text-align: center;
+    }
+
+    @include phones {
+        margin-bottom: rem(12px);
+    }
+}
+
+.slide__title-break {
+    display: none;
+
+    @include tablets {
+        display: inline;
+    }
+}
+
+.slide__desc {
+    width: 90%;
+    color: $grey;
+    font-size: rem(18px);
+    text-align: justify;
+    margin-bottom: rem(37px);
+
+    @include tablets {
+        width: 97%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: rem(37px);
+    }
+
+    @include phones {
+        width: 104%;
+        margin-bottom: rem(27px);
+    }
+}
+
+.slide__nutrition-facts {
+    display: flex;
+    color: #333333;
+    font-size: rem(18px);
+    margin-bottom: rem(37px);
+
+    @include tablets {
+        justify-content: center;
+    }
+
+    @include phones {
+        margin-bottom: rem(27px);
+    }
+}
+
+.slide__fact {
+    margin-right: rem(56px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.slide__fact-title {
+    margin-bottom: rem(4px);
+}
+
+.slide__fact-value {
+    font-weight: 700;
+}
+
+.slide__order {
+    display: flex;
+
+    @include tablets {
+        justify-content: center;
+    }
+
+    @include phones {
+        justify-content: space-evenly;
+    }
+}
+
+.slide__price {
+    color: $black;
+    font-size: rem(60px);
+    font-weight: 300;
+    line-height: rem(60px);
+    text-transform: uppercase;
+    margin-right: rem(27px);
+
+    @include phones {
+        font-size: rem(42px);
+        line-height: rem(57px);
+        margin-right: 0;
+    }
+}

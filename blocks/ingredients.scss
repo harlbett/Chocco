@@ -1,0 +1,83 @@
+.ingredients {
+    position: relative;
+    margin-bottom: rem(30px);
+
+    @include tablets {
+        position: absolute;
+        top: rem(18px);
+        right: rem(18px);
+        margin-bottom: 0;
+    }
+
+    @include phones {
+        top: rem(10px);
+        right: rem(10px);
+    }
+}
+
+.ingredients__link {
+    width: rem(90px);
+    height: rem(90px);
+    border-radius: 6px;
+    background: $blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.ingredients__pic {
+    width: rem(51px);
+    height: rem(51px);
+    fill: $white;
+    margin-bottom: rem(6px);
+}
+
+.ingredients__title {
+    color: $white;
+    font-size: rem(14px);
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.ingredients__list {
+    display: none;
+    width: rem(270px);
+    border-radius: 6px;
+    background: $white;
+    opacity: 0.9;
+    padding: rem(18px) 0;
+    position: absolute;
+    top: 0;
+    left: rem(90px);
+    z-index: 100;
+
+    @include tablets {
+        left: unset;
+        right: rem(90px);
+    }
+
+    @include phones {
+        top: unset;
+        right: 0;
+    }
+}
+
+.ingredients__item, .ingredient {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: rem(24px);
+    padding: rem(8px) rem(20px) rem(8px) rem(32px);
+}
+
+.ingredient__pic {
+    width: rem(35px);
+    height: rem(35px);
+}
+
+.ingredient__name {
+    font-weight: 500;
+}

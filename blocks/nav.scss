@@ -8,15 +8,7 @@
     justify-content: space-evenly;
     align-items: center;
 }
-/*
-.nav__item {
-    margin-right: rem(30px);
 
-    &:last-child {
-        margin-right: 0;
-    }
-}
-*/
 .nav__link {
     text-decoration: none;
     color: inherit;
@@ -24,19 +16,18 @@
 }
 
 .nav--hamburger {
-    width: auto;
-    margin: 0;
+//    width: auto;
+    margin-top: rem(130px);
 
     .nav__list {
         flex-direction: column;
 
         .nav__item {
-            margin-right: 0;
-//			animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
 
             .nav__link {
-                font-size: 36px;
-                line-height: 72px;
+                font-size: rem(36px);
+                line-height: rem(72px);
             }
         }
     }

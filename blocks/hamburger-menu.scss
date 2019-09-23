@@ -6,16 +6,9 @@
     left: 0;
     background: $grey-deep;
     color: $white;
-    justify-content: center;
-    align-items: center;
-//    z-index: 100;
-    display: none;
+    z-index: 100;
 //    transition: opacity .3s;
-    
-    &--visible {
-//        display: flex;
-        opacity: 1;
-	}
+    display: none;
 }
 
 .hamburger-menu__close {
