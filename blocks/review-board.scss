@@ -1,4 +1,4 @@
-.reviews__board {
+.reviews {
     color: $grey;
     margin-top: rem(40px);
 
@@ -29,7 +29,7 @@
     padding: rem(35px) 0 rem(35px) rem(35px);
 //    transition: opacity .3s;
 
-    &--visible {
+    &--active {
         display: flex;
     }
 
@@ -143,6 +143,14 @@
 .reviews__switch-item {
     margin-right: rem(1px); // rem(11px);
 
+    &--active {
+        .reviews__link {
+            .reviews__small-pic {
+                border-color: $green;
+            }
+        }
+    }
+
     @include tablets {
         margin-right: rem(26px);
     }
@@ -160,11 +168,7 @@
     max-width: rem(78px);
     border-radius: 50%;
     border: rem(5px) solid transparent;
-    margin-bottom: rem(-10px); // ?
-    
-    &:hover {
-        border-color: $green;
-    }
+    margin-bottom: rem(-10px);
 
     @include tablets {
         max-width: 100%;

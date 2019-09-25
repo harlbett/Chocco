@@ -45,11 +45,20 @@
     stroke-width: rem(2px);
 }
 
-.slider__list {
+.slider__box {
+    overflow: hidden;
     margin: 0 rem(5px);
 }
 
+.slider__list {
+    position: relative;
+    display: flex;
+    will-change: right;
+    transition: right 0.5s;
+}
+
 .slider__item, .slide {
+    min-width: 100%;
     display: flex;
     justify-content: space-between;
 

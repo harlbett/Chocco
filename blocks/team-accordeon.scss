@@ -27,7 +27,7 @@
         margin-right: 0;
     }
 
-    &--visible {
+    &--active {
         .team-accordeon__trigger {
             color: $green;
 
@@ -96,6 +96,7 @@
 .team-accordeon__content {
     height: 0;
     overflow: hidden;
+    transition: height 0.3s;
 }
 
 .team-accordeon__title {

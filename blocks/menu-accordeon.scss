@@ -1,5 +1,6 @@
 .menu-accordeon {
-    display: flex; // ?
+    display: flex;
+    justify-content: flex-end;
     position: absolute;
     right: 0;
 	top: 0;
@@ -10,10 +11,30 @@
     display: flex;
     justify-content: flex-end;
     height: 100%; // 100vh;
+    width: rem(100px);
 
-    &--visible {
+    @include tablets {
+        width: rem(80px);
+    }
+
+    @include phones {
+        width: rem(50px);
+    }
+
+    &--active {
+        width: 60%;
+
+        &:nth-child(2), &:last-child {
+            background-color: $grey-deep;
+            opacity: 0.93;
+        }
+
+        @include tablets {
+            width: 100%;
+        }
+
         .menu-accordeon__content {
-            width: 60%;  // in avocode: content = 630px, text = 380px
+            width: calc(100% - 6.25rem); // 100% - 100px // 60%;  // in avocode: content = 630px, text = 380px
             overflow: inherit; // ?
             background-color: $grey-deep;
             opacity: 0.93;
@@ -46,7 +67,12 @@
             }
 
             @include tablets {
-                width: 100%;
+//                width: 100%;
+                width: calc(100% - 5rem); // 100% - 80px
+            }
+
+            @include phones {
+                width: calc(100% - 3.125rem); // 100% - 50px
             }
         }
     }
@@ -54,8 +80,7 @@
 
 .menu-accordeon__trigger {
     width: rem(100px);
-    display: flex; // ?
-//    justify-content: center;
+    display: flex;
     text-decoration: none;
     color: inherit;
     background: $grey-deep center center / cover no-repeat;
@@ -104,6 +129,9 @@
 .menu-accordeon__content {
     width: 0;
     overflow: hidden;
+//    opacity: 1;
+    transition: width 0.5s;
+//    transition-delay: 0.5s;
 }
 
 .menu-accordeon__text {
